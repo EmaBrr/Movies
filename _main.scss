@@ -1,0 +1,107 @@
+body {
+    width: 100%;
+    height: 100vh;
+    display: inline-block;
+    font-family: 'Roboto Condensed', sans-serif;
+    .questionaire {
+        display: flex;
+        width: 80%;
+        margin-left: calc(20%/2);
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        form{
+            display: inline-block;
+            .input {
+                display: block;
+                width: 100%;
+                margin: 10px;
+                label{
+                    width: 400px;
+                    text-align: right;
+                    display: inline-block;
+                    padding: 0px 20px;
+                }
+                input{
+                    width: 300px;
+                    right: 0;
+                    border: 1px solid rgb(116, 106, 106);
+                    font-size: 20px;
+                    padding: 0px 2px;
+                    ::placeholder {
+                        font-size: 20px;
+                        color: rgb(165, 159, 159);;
+                    }
+                }
+                .select{
+                    width: 300px;
+                    right: 0;
+                    border: 1px solid rgb(116, 106, 106);
+                    font-size: 20px;
+                    padding: 0px 2px;
+                    font-family: 'Roboto Condensed', sans-serif;
+                    ::placeholder {
+                        font-size: 20px;
+                        color: rgb(165, 159, 159);;
+                    }
+                }
+            }
+        }
+    }
+    .results {
+        display: flex;
+        width: 80%;
+        margin-left: calc(20%/2);
+        padding: 30px;
+        align-items: center;
+        justify-content: center;
+        table {
+            color: black;
+            font-family: 'Roboto Condensed', sans-serif;
+            background-color: rgb(255, 255, 255);
+            border-color: rgb(0, 0, 0);
+            border-style: solid;
+            border-width: 0 1px 1px 1px;
+            border-spacing: 0;
+            display: table;
+            overflow: auto;
+            width: 100%;
+            font-size: 20px;
+            font-weight: 300;
+            thead {
+                th {
+                  color: white;
+                  background-color: rgb(70, 75, 117);
+                  padding: 5px 10px;
+                  vertical-align: bottom;
+                  font-weight: 300;
+                }
+              }
+              tbody {
+                td {
+                  border-top: 1px solid gray;
+                  padding: 5px 10px;
+                  vertical-align: top;
+                  text-align: center;
+                }
+                tr:nth-child(even) {
+                  background-color: rgb(219, 218, 218);
+                }
+                tr:nth-child(odd) {
+                    background-color:white;
+                  }
+                tr:hover {
+                    background-color: rgb(202, 202, 202);
+                }
+              }
+        }
+    }
+}
+
+h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 15px;
+}
